@@ -446,5 +446,3180 @@
                 "max_level": 5
             }
         }
+    },
+    {
+        "id": "iron",
+        "name": "铁",
+        "type": "metal",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "iron_ore",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 1
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 0.7,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 90,
+                    "max_chance": -1,
+                    "min_height": 80,
+                    "max_height": 384,
+                    "height": "trapezoid",
+                    "size": 9,
+                    "discard": 0
+                },
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 10,
+                    "max_chance": -1,
+                    "min_height": -24,
+                    "max_height": 56,
+                    "height": "trapezoid",
+                    "size": 9,
+                    "discard": 0
+                },
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 10,
+                    "max_chance": -1,
+                    "min_height": -64,
+                    "max_height": 72,
+                    "height": "uniform",
+                    "size": 4,
+                    "discard": 0
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "raw_iron"
+        },
+        "raw_block": {
+            "vanilla": "raw_iron_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "iron_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "ingot": {
+            "vanilla": "iron_ingot"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "iron_nugget"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 1812,
+            "density": 6980,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 3134,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "copper",
+        "name": "铜",
+        "type": "metal",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "copper_ore",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 1
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 2,
+                "max_count": 5
+            },
+            "smelt": {
+                "xp": 0.7,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 16,
+                    "max_chance": -1,
+                    "min_height": -16,
+                    "max_height": 112,
+                    "height": "trapezoid",
+                    "size": 10,
+                    "discard": 0
+                },
+                {
+                    "biomes": [
+                        "dripstone_caves"
+                    ],
+                    "min_chance": 16,
+                    "max_chance": -1,
+                    "min_height": -16,
+                    "max_height": 112,
+                    "height": "trapezoid",
+                    "size": 20,
+                    "discard": 0
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "raw_copper"
+        },
+        "raw_block": {
+            "vanilla": "raw_copper_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "copper_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "ingot": {
+            "vanilla": "copper_ingot"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 1358,
+            "density": 8020,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 2835,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "gold",
+        "name": "金",
+        "type": "metal",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "gold_ore",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 2
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 1,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 4,
+                    "max_chance": -1,
+                    "min_height": -64,
+                    "max_height": 32,
+                    "height": "trapezoid",
+                    "size": 9,
+                    "discard": 0.5
+                },
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 0,
+                    "max_chance": 1,
+                    "min_height": -64,
+                    "max_height": -48,
+                    "height": "uniform",
+                    "size": 9,
+                    "discard": 0.5
+                },
+                {
+                    "biomes": [
+                        "badlands",
+                        "eroded_badlands",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 50,
+                    "max_chance": -1,
+                    "min_height": 32,
+                    "max_height": 256,
+                    "height": "uniform",
+                    "size": 9,
+                    "discard": 0
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "raw_gold"
+        },
+        "raw_block": {
+            "vanilla": "raw_gold_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 2
+            }
+        },
+        "storage_block": {
+            "vanilla": "gold_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 6,
+                "level": 2
+            }
+        },
+        "ingot": {
+            "vanilla": "gold_ingot"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "gold_nugget"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 1337,
+            "density": 17310,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 3129,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "redstone",
+        "name": "红石",
+        "type": "dust",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "redstone_ore",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 2
+            },
+            "drop": {
+                "min_xp": 1,
+                "max_xp": 5,
+                "min_count": 4,
+                "max_count": 5
+            },
+            "smelt": {
+                "xp": 0.7,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 4,
+                    "max_chance": -1,
+                    "min_height": 0,
+                    "max_height": 15,
+                    "height": "uniform",
+                    "size": 8,
+                    "discard": 0
+                },
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 8,
+                    "max_chance": -1,
+                    "min_height": -32,
+                    "max_height": 32,
+                    "height": "trapezoid",
+                    "size": 8,
+                    "discard": 0
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "redstone_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 0
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "redstone"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "lapis",
+        "name": "青金石",
+        "type": "gem",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "lapis_ore",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 1
+            },
+            "drop": {
+                "min_xp": 2,
+                "max_xp": 5,
+                "min_count": 4,
+                "max_count": 9
+            },
+            "smelt": {
+                "xp": 0.2,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 2,
+                    "max_chance": -1,
+                    "min_height": -32,
+                    "max_height": 32,
+                    "height": "trapezoid",
+                    "size": 7,
+                    "discard": 0
+                },
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 4,
+                    "max_chance": -1,
+                    "min_height": 0,
+                    "max_height": 64,
+                    "height": "uniform",
+                    "size": 7,
+                    "discard": 1
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "lapis_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 1
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "lapis_lazuli"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "diamond",
+        "name": "钻石",
+        "type": "gem",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "diamond_ore",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 2
+            },
+            "drop": {
+                "min_xp": 3,
+                "max_xp": 7,
+                "min_count": 1,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 1,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 7,
+                    "max_chance": -1,
+                    "min_height": -80,
+                    "max_height": 80,
+                    "height": "trapezoid",
+                    "size": 4,
+                    "discard": 0.5
+                },
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": -1,
+                    "max_chance": 9,
+                    "min_height": -80,
+                    "max_height": 80,
+                    "height": "trapezoid",
+                    "size": 12,
+                    "discard": 0.7
+                },
+                {
+                    "biomes": [
+                        "badlands",
+                        "bamboo_jungle",
+                        "beach",
+                        "birch_forest",
+                        "cold_ocean",
+                        "dark_forest",
+                        "deep_cold_ocean",
+                        "deep_frozen_ocean",
+                        "deep_lukewarm_ocean",
+                        "deep_ocean",
+                        "desert",
+                        "dripstone_caves",
+                        "eroded_badlands",
+                        "flower_forest",
+                        "forest",
+                        "frozen_ocean",
+                        "frozen_peaks",
+                        "frozen_river",
+                        "grove",
+                        "ice_spikes",
+                        "jagged_peaks",
+                        "jungle",
+                        "lukewarm_ocean",
+                        "lush_caves",
+                        "meadow",
+                        "mushroom_fields",
+                        "ocean",
+                        "old_growth_birch_forest",
+                        "old_growth_pine_taiga",
+                        "old_growth_spruce_taiga",
+                        "plains",
+                        "river",
+                        "savanna",
+                        "savanna_plateau",
+                        "snowy_beach",
+                        "snowy_plains",
+                        "snowy_slopes",
+                        "snowy_taiga",
+                        "sparse_jungle",
+                        "stony_peaks",
+                        "stony_shore",
+                        "sunflower_plains",
+                        "swamp",
+                        "taiga",
+                        "warm_ocean",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills",
+                        "windswept_savanna",
+                        "wooded_badlands"
+                    ],
+                    "min_chance": 4,
+                    "max_chance": -1,
+                    "min_height": -80,
+                    "max_height": 80,
+                    "height": "trapezoid",
+                    "size": 8,
+                    "discard": 1
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "diamond_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 2
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "diamond"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "emerald",
+        "name": "绿宝石",
+        "type": "gem",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "emerald_ore",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 2
+            },
+            "drop": {
+                "min_xp": 3,
+                "max_xp": 7,
+                "min_count": 1,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 1,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "frozen_peaks",
+                        "grove",
+                        "jagged_peaks",
+                        "meadow",
+                        "snowy_slopes",
+                        "stony_peaks",
+                        "windswept_forest",
+                        "windswept_gravelly_hills",
+                        "windswept_hills"
+                    ],
+                    "min_chance": 100,
+                    "max_chance": -1,
+                    "min_height": -16,
+                    "max_height": 480,
+                    "height": "trapezoid",
+                    "size": 3,
+                    "discard": 0
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "emerald_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 2
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "emerald"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "glowstone",
+        "name": "荧石",
+        "type": "dust",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "null",
+            "state": {
+                "light": 15,
+                "hardness": 0.3,
+                "resistance": 0.3,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 0,
+                "max_count": 4
+            },
+            "smelt": {
+                "xp": 0,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "basalt_deltas",
+                        "crimson_forest",
+                        "nether_wastes",
+                        "soul_sand_valley",
+                        "warped_forest"
+                    ],
+                    "min_chance": 0,
+                    "max_chance": 9,
+                    "min_height": 4,
+                    "max_height": 124,
+                    "height": "uniform",
+                    "size": 9,
+                    "discard": 0.5
+                },
+                {
+                    "biomes": [
+                        "basalt_deltas",
+                        "crimson_forest",
+                        "nether_wastes",
+                        "soul_sand_valley",
+                        "warped_forest"
+                    ],
+                    "min_chance": 10,
+                    "max_chance": -1,
+                    "min_height": 0,
+                    "max_height": 128,
+                    "height": "uniform",
+                    "size": 9,
+                    "discard": 0.5
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "glowstone",
+            "count": 4,
+            "state": {
+                "light": 15,
+                "hardness": 0.3,
+                "resistance": 0.3,
+                "level": 0
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "glowstone_dust"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "quartz",
+        "name": "下界石英",
+        "type": "gem",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "nether_quartz_ore",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 2,
+                "max_xp": 5,
+                "min_count": 1,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 0.2,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "basalt_deltas"
+                    ],
+                    "min_chance": 32,
+                    "max_chance": -1,
+                    "min_height": 10,
+                    "max_height": 118,
+                    "height": "uniform",
+                    "size": 14,
+                    "discard": 0
+                },
+                {
+                    "biomes": [
+                        "crimson_forest",
+                        "nether_wastes",
+                        "soul_sand_valley",
+                        "warped_forest"
+                    ],
+                    "min_chance": 0,
+                    "max_chance": -1,
+                    "min_height": 10,
+                    "max_height": 118,
+                    "height": "uniform",
+                    "size": 14,
+                    "discard": 0
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "quartz_block",
+            "count": 4,
+            "state": {
+                "light": 0,
+                "hardness": 0.8,
+                "resistance": 0.8,
+                "level": 0
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "quartz"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 1986,
+            "density": 2030,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 3220,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "debris",
+        "name": "远古",
+        "type": "gem",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "ancient_debris",
+            "state": {
+                "light": 0,
+                "hardness": 30,
+                "resistance": 1200,
+                "level": 3
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 2,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "basalt_deltas",
+                        "crimson_forest",
+                        "nether_wastes",
+                        "soul_sand_valley",
+                        "warped_forest"
+                    ],
+                    "min_chance": 1,
+                    "max_chance": -1,
+                    "min_height": 8,
+                    "max_height": 24,
+                    "height": "trapezoid",
+                    "size": 3,
+                    "discard": 1
+                },
+                {
+                    "biomes": [
+                        "basalt_deltas",
+                        "crimson_forest",
+                        "nether_wastes",
+                        "soul_sand_valley",
+                        "warped_forest"
+                    ],
+                    "min_chance": 1,
+                    "max_chance": -1,
+                    "min_height": 8,
+                    "max_height": 120,
+                    "height": "uniform",
+                    "size": 2,
+                    "discard": 1
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "netherite_scrap"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "amethyst",
+        "name": "紫水晶",
+        "type": "gem",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 2
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 0,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "all"
+                    ],
+                    "min_chance": 0,
+                    "max_chance": 1,
+                    "min_height": -64,
+                    "max_height": -48,
+                    "height": "uniform",
+                    "size": 9,
+                    "discard": 0.5
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "amethyst_cluster",
+            "state": {
+                "light": 5,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 2
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 4,
+                "max_count": 4
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "amethyst_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "amethyst_shard"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 15,
+            "temperature": 1986,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 3220,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "netherite",
+        "name": "下界合金",
+        "type": "alloy",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 0,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 0,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "all"
+                    ],
+                    "min_chance": 0,
+                    "max_chance": 1,
+                    "min_height": -64,
+                    "max_height": -48,
+                    "height": "uniform",
+                    "size": 9,
+                    "discard": 0.5
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "netherite_block",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 50,
+                "resistance": 1200,
+                "level": 3
+            }
+        },
+        "ingot": {
+            "vanilla": "netherite_ingot"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "water",
+        "name": "水",
+        "type": "fluid",
+        "source": "minecraft",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 0,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 0,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "all"
+                    ],
+                    "min_chance": 0,
+                    "max_chance": 1,
+                    "min_height": -64,
+                    "max_height": -48,
+                    "height": "uniform",
+                    "size": 9,
+                    "discard": 0.5
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
+    },
+    {
+        "id": "lava",
+        "name": "熔岩",
+        "type": "null",
+        "source": "null",
+        "color": "0x00000000",
+        "ore": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 3,
+                "resistance": 3,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 0,
+                "max_count": 1
+            },
+            "smelt": {
+                "xp": 0,
+                "count": 1
+            },
+            "generates": [
+                {
+                    "biomes": [
+                        "all"
+                    ],
+                    "min_chance": 0,
+                    "max_chance": 1,
+                    "min_height": -64,
+                    "max_height": -48,
+                    "height": "uniform",
+                    "size": 9,
+                    "discard": 0.5
+                }
+            ]
+        },
+        "cluster": {
+            "vanilla": "null",
+            "state": {
+                "light": 0,
+                "hardness": 1.5,
+                "resistance": 1.5,
+                "level": 0
+            },
+            "drop": {
+                "min_xp": 0,
+                "max_xp": 0,
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "raw": {
+            "vanilla": "null"
+        },
+        "raw_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "storage_block": {
+            "vanilla": "null",
+            "count": 9,
+            "state": {
+                "light": 0,
+                "hardness": 5,
+                "resistance": 6,
+                "level": 1
+            }
+        },
+        "ingot": {
+            "vanilla": "null"
+        },
+        "gem": {
+            "vanilla": "null"
+        },
+        "dust": {
+            "vanilla": "null"
+        },
+        "slimeball": {
+            "vanilla": "null "
+        },
+        "rod": {
+            "vanilla": "null"
+        },
+        "shard": {
+            "vanilla": "null"
+        },
+        "nugget": {
+            "vanilla": "null"
+        },
+        "tiny_dust": {
+            "vanilla": "null"
+        },
+        "gear": {
+            "vanilla": "null"
+        },
+        "plate": {
+            "vanilla": "null"
+        },
+        "coin": {
+            "vanilla": "null"
+        },
+        "casing": {
+            "vanilla": "null"
+        },
+        "fluid": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 300,
+            "density": 1000,
+            "viscosity": 1000
+        },
+        "gas": {
+            "vanilla": "null",
+            "luminosity": 0,
+            "temperature": 373,
+            "density": -1.7,
+            "viscosity": 0
+        },
+        "products": [
+            {
+                "byproduct": "null",
+                "chance": 9
+            }
+        ],
+        "flux": 0,
+        "fuel": 0,
+        "tinker": {
+            "traits": [
+                {
+                    "name": "null",
+                    "level": 1
+                }
+            ],
+            "head": {
+                "vanilla": "null",
+                "durability": 740,
+                "miningSpeed": 7,
+                "harvestLevel": 3,
+                "attack": 2
+            },
+            "handle": {
+                "vanilla": "null",
+                "durability": 1,
+                "miningSpeed": 1,
+                "attackSpeed": 1,
+                "attackDamage": 1
+            },
+            "extra": {
+                "vanilla": "null"
+            },
+            "modifiers": {
+                "slots": "null",
+                "number": 1,
+                "name": "null",
+                "neededPerLevel": 9,
+                "level": 1,
+                "max_level": 5
+            }
+        }
     }
 ]

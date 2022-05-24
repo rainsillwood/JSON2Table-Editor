@@ -19,7 +19,7 @@
         }
 
         tr:first-child th:first-child,
-        .id {
+        .index {
             position: sticky;
             left: 0px;
             background-color: white;
@@ -33,6 +33,7 @@
         td {
             border: 1px solid black;
             padding: 5px;
+            background-color: #00000000;
         }
     </style>
     <script>
@@ -41,6 +42,7 @@
         var rowKey, columnKey;
         var arrayData;
         var rowData, columnData;
+        var index;
 
         function importJSON() {
             objectJSON = {};
@@ -101,6 +103,8 @@
                     }
                 }
             }
+            index = arrayKey[0][0].split('.').pop();
+            index=index.split('/').shift();
             rowData = 0;
             for (let i in objectJSON) {
                 columnData = 0;
@@ -163,9 +167,13 @@
                     let ifbiome = (id == "biomes") ?
                         ' style="width:400px;height:21px;word-break:break-all;overflow:auto;"' :
                         '';
-                    let ifid = (id == 'id') ? ' class="id"' :
+                    let ifid = (id == index) ? ' class="index"' :
                         '';
-                    table = table + '<td' + ifid + ' rowspan=' + stringArray[1] +
+                        let color=stringArray[0];
+                    let ifcolor = (id == "color") ?
+                        (' style="background-color: #'+color.slice(4,9)+color.slice(2,3)+';"') :
+                        '';
+                    table = table + '<td' + ifid + ' rowspan=' + stringArray[1] + ifcolor +
                         ' onclick="showEdit(this.firstElementChild);" oncontextmenu="addArray(this.firstElementChild.id)"><div id=' +
                         stringArray[2] +
                         ' class=' +
@@ -238,7 +246,7 @@
 
         function showEdit(object) {
             let tmptext = object.innerHTML;
-            object.innerHTML = '<textarea rows="3" cols="45" onblur="changeJson(\'' + object.id + '\', this.value, \'' +
+            object.innerHTML = '<textarea rows="3" cols="45" onblur="changeJson(\'' + object[index] + '\', this.value, \'' +
                 object
                 .className +
                 '\')">' + tmptext + '</textarea>';
@@ -250,7 +258,7 @@
         function changeJson(key, data, type) {
             let arrayKeys = key.split('.');
             for (let i in objectJSON) {
-                if (objectJSON[i].id == arrayKeys[0]) {
+                if (objectJSON[i][index] == arrayKeys[0]) {
                     arrayKeys.shift();
                     let key = arrayKeys.pop();
                     let tmpobj = {};
@@ -261,8 +269,7 @@
                 }
             }
             exportJSON();
-            document.getElementById(key).innerHTML = data;
-            document.getElementById(key).parentNode.onclick=''
+            getTable();
         }
 
         function getObject(keyArray, object) {
@@ -296,7 +303,7 @@
         function addLine() {
             let tempJSON = JSON.stringify(objectJSON[0]);
             tempJSON = JSON.parse(tempJSON);
-            tempJSON.id = 'newMaterial';
+            tempJSON[index] = 'newIndex';
             objectJSON[objectJSON.length] = tempJSON;
             exportJSON();
             getTable();
@@ -306,7 +313,7 @@
             let keyArray = key.split('.');
             for (let i in objectJSON) {
                 let tempObj = objectJSON[i];
-                if (tempObj.id == keyArray[0]) {
+                if (tempObj[index] == keyArray[0]) {
                     keyArray.shift();
                     for (let x = keyArray.length - 1; x >= 0; x--) {
                         if ((Math.pow(keyArray.pop(), 2) + 1) > 0) {
@@ -317,7 +324,7 @@
                         alert('找不到可以增加的数组');
                         break;
                     }
-                    if (confirm('是否增加节点?' + tempObj.id + '.' + keyArray.toString('.').replaceAll(',', '.') + '?')) {
+                    if (confirm('是否增加节点?' + tempObj[index] + '.' + keyArray.toString('.').replaceAll(',', '.') + '?')) {
                         let tempJSON = {};
                         let keyArray2 = keyArray.toString();
                         let data = JSON.stringify(getObject(keyArray2.split(','), objectJSON[0])[0]);
@@ -341,7 +348,7 @@
             <button type="button" onclick="exportJSON()">导出</button>
             <button type="button" onclick="addLine()">增行</button></br>
             </br><textarea style="height: 90%;position: absolute;" cols="30"
-                id="inputArea">导入：导入一个json并生成表格；生成：重新生成表格；导出：自动导出，一般用不到；增行：以第一行为模板增加一行；双击单元格：修改内容，右击单元格：若为数组形式，以第一行为模板新增数组项</textarea>
+                id="inputArea">导入：导入一个json并生成表格，注意第一个json的第一个属性被视为索引属性，该属性不能为object或者array。第一个json内数据格式被视为模板格式；\n生成：重新生成表格；导出：自动导出，一般用不到；\n增行：以第一行为模板增加一行；\n双击单元格：修改内容。\n右击单元格：若为数组形式，以第一行为模板新增数组项</textarea>
             </br>
         </div>
         <div id="table" style="width:calc(100%-260px);height: calc(100%);margin-left:260px;overflow: auto;"></div>

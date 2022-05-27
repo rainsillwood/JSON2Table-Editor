@@ -347,6 +347,7 @@
             <button type="button" onclick="getTable()">生成</button>
             <button type="button" onclick="exportJSON()">导出</button>
             <button type="button" onclick="addLine()">增行</button></br>
+            提交问题：<a href="https://github.com/rainsillwood/JSON2Table-Editor/issues">Issue</a></br>
             </br><textarea style="height: 90%;position: absolute;" cols="30" id="inputArea">
 导入：导入一个json并生成表格，注意第一个json的第一个属性被视为索引属性，该属性不能为object或者array。第一个json内数据格式被视为模板格式；
 
@@ -359,8 +360,7 @@
 双击单元格：修改内容；
 
 右击单元格：若为数组形式，以第一行为模板新增数组项</textarea>
-            </br>
-        提交问题：<a href="https://github.com/rainsillwood/JSON2Table-Editor/issues">Issue</a></div>
+            </br></div>
         <div id="table" style="width:calc(100%-260px);height: calc(100%);margin-left:260px;overflow: auto;"></div>
     </div>
 </body>

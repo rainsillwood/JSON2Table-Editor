@@ -104,7 +104,7 @@
                 }
             }
             index = arrayKey[0][0].split('.').pop();
-            index=index.split('/').shift();
+            index = index.split('/').shift();
             rowData = 0;
             for (let i in objectJSON) {
                 columnData = 0;
@@ -169,9 +169,9 @@
                         '';
                     let ifid = (id == index) ? ' class="index"' :
                         '';
-                        let color=stringArray[0];
+                    let color = stringArray[0];
                     let ifcolor = (id == "color") ?
-                        (' style="background-color: #'+color.slice(4,9)+color.slice(2,3)+';"') :
+                        (' style="background-color: #' + color.slice(4, 9) + color.slice(2, 3) + ';"') :
                         '';
                     table = table + '<td' + ifid + ' rowspan=' + stringArray[1] + ifcolor +
                         ' onclick="showEdit(this.firstElementChild);" oncontextmenu="addArray(this.firstElementChild.id)"><div id=' +
@@ -248,7 +248,7 @@
             let tmptext = object.innerHTML;
             object.innerHTML = '<textarea rows="3" cols="45" onblur="changeJson(\'' + object[index] + '\', this.value, \'' +
                 object
-                .className +
+                    .className +
                 '\')">' + tmptext + '</textarea>';
             object.style.height = '63px';
             object.firstElementChild.focus();
@@ -360,7 +360,8 @@
 双击单元格：修改内容；
 
 右击单元格：若为数组形式，以第一行为模板新增数组项</textarea>
-            </br></div>
+            </br>
+        </div>
         <div id="table" style="width:calc(100%-260px);height: calc(100%);margin-left:260px;overflow: auto;"></div>
     </div>
 </body>

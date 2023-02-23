@@ -46,7 +46,9 @@
 
         function importJSON() {
             objectJSON = {};
+            //从文本域读取JSON
             let tempJSON = JSON.parse(document.getElementById('inputArea').value);
+            //将JSON转换为JSONArray
             objectJSON = (tempJSON.constructor === Array) ? tempJSON : [tempJSON];
             for (let i in objectJSON) {
                 if (i == '0')
@@ -57,6 +59,43 @@
             }
             getTable();
             return 0;
+        }
+
+        function importTSV() {
+            let arrayTSV = [];
+            let keyLine = -1;//定义键值行
+            //从文本域读取TSV
+            let tempTSV = document.getElementById('inputArea').value.split('\n');
+            //将TSV分列
+            for (let i in tempTSV) {
+                arrayTSV[i] = tempTSV[i].split('\t');
+                arrayTSV[i].unshift(i);
+                //获取分割行
+                if (arrayTSV[i][1] == 'type') {
+                    keyLine = i;
+                }
+            }
+            for (let i = 0; i < keyLine; i++) {
+                for (let j = 1; j < arrayTSV[i].length; j++) {
+                    if (arrayTSV[i][j] != '') {
+                        if (i > 0) arrayTSV[i][j] = arrayTSV[i - 1][j] + '.' + arrayTSV[i][j];
+                    } else {
+                        if ((i > 0) && (arrayTSV[i - 1][j] != arrayTSV[i - 1][j - 1])) {
+                            arrayTSV[i][j] = arrayTSV[i - 1][j];
+                            continue;
+                        }
+                        arrayTSV[i][j] = arrayTSV[i][j - 1];
+                    }
+                }
+            }
+            let keyArray = [];
+            let typeArray=[];
+            for (let i in arrayTSV[keyLine - 1]) {
+                keyArray.push(arrayTSV[keyLine - 1][i].split('.'));
+                typeArray.push()
+            }
+            return 0;
+            getTable();
         }
 
         function exportJSON() {
@@ -164,13 +203,13 @@
                         continue;
                     let stringArray = arrayData[i][j].split('/');
                     let id = stringArray[2].split('.').pop();
-                    let ifbiome = (id == "biomes") ?
+                    let ifbiome = (id == 'biomes') ?
                         ' style="width:400px;height:21px;word-break:break-all;overflow:auto;"' :
                         '';
                     let ifid = (id == index) ? ' class="index"' :
                         '';
                     let color = stringArray[0];
-                    let ifcolor = (id == "color") ?
+                    let ifcolor = (id == 'color') ?
                         (' style="background-color: #' + color.slice(4, 9) + color.slice(2, 3) + ';"') :
                         '';
                     table = table + '<td' + ifid + ' rowspan=' + stringArray[1] + ifcolor +
@@ -196,7 +235,7 @@
 
         function getKeys(row, column, key, data) {
             let idata = data;
-            let signArray = "";
+            let signArray = '';
             if (idata.constructor === Array) {
                 idata = data[0];
                 signArray = '.|';
@@ -300,6 +339,8 @@
             }
         }
 
+        function fillTSV() { }
+
         function addLine() {
             let tempJSON = JSON.stringify(objectJSON[0]);
             tempJSON = JSON.parse(tempJSON);
@@ -343,13 +384,16 @@
 <body>
     <div style="width: 99%;height: 99%;overflow: hidden;position: absolute;">
         <div style="width: 260px;height: 100%;float:left;overflow: hidden;">
-            <button type="button" onclick="importJSON()">导入</button>
+            <button type="button" onclick="importJSON()">导入JSON</button>
+            <button type="button" onclick="importTSV()">导入TSV</button>
             <button type="button" onclick="getTable()">生成</button>
             <button type="button" onclick="exportJSON()">导出</button>
             <button type="button" onclick="addLine()">增行</button></br>
             提交问题：<a href="https://github.com/rainsillwood/JSON2Table-Editor/issues">Issue</a></br>
             </br><textarea style="height: 90%;position: absolute;" cols="30" id="inputArea">
-导入：导入一个json并生成表格，注意第一个json的第一个属性被视为索引属性，该属性不能为object或者array。第一个json内数据格式被视为模板格式；
+导入JSON：导入一个json并生成表格，注意第一个json的第一个属性被视为索引属性，该属性不能为object或者array。第一个json内数据格式被视为模板格式；
+
+导入TSV：导入一个tsv(制表符分隔文件)并生成表格，注意tsv的第一个第一列值为""被视为索引行，该行必须为全空。
 
 生成：重新生成表格；
 

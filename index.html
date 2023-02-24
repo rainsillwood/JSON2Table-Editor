@@ -10,25 +10,25 @@
             width: 100%;
             background-color: white;
         }
-
+        
         thead {
             position: sticky;
             top: 0px;
             background-color: white;
             z-index: 1;
         }
-
+        
         tr:first-child th:first-child,
         .index {
             position: sticky;
             left: 0px;
             background-color: white;
         }
-
+        
         tr:first-child th:first-child {
             z-index: 1;
         }
-
+        
         th,
         td {
             border: 1px solid black;
@@ -45,7 +45,6 @@
         var index;
 
         function importJSON() {
-            objectJSON = {};
             //从文本域读取JSON
             let tempJSON = JSON.parse(document.getElementById('inputArea').value);
             //将JSON转换为JSONArray
@@ -63,7 +62,7 @@
 
         function importTSV() {
             let arrayTSV = [];
-            let keyLine = -1;//定义键值行
+            let keyLine = -1; //定义键值行
             //从文本域读取TSV
             let tempTSV = document.getElementById('inputArea').value.split('\n');
             //将TSV分列
@@ -72,7 +71,7 @@
                 arrayTSV[i].unshift(i);
                 //获取分割行
                 if (arrayTSV[i][1] == 'type') {
-                    keyLine = i;
+                    keyLine = i * 1;
                 }
             }
             for (let i = 0; i < keyLine; i++) {
@@ -89,10 +88,32 @@
                 }
             }
             let keyArray = [];
-            let typeArray=[];
+            let typeArray = [];
             for (let i in arrayTSV[keyLine - 1]) {
                 keyArray.push(arrayTSV[keyLine - 1][i].split('.'));
                 typeArray.push()
+            }
+            let arrayTemp = [];
+            for (let i = keyLine + 1; i < arrayTSV.length; i++) {
+                arrayTemp[i] = {};
+                for (let j = 1; j < keyArray.length; j++) {
+                    let tempData = arrayTSV[i][j];
+                    if (tempData == '') continue;
+                    if (typeArray[j] == 'number') tempData = tempData * 1;
+                    setData(keyArray[j].concat(), tempData, arrayTemp[i])
+                }
+            }
+            objectJSON = [];
+            let order = -1;
+            for (i in arrayTemp) {
+                if (!arrayTemp[i][keyArray[1][0]]) {
+                    for (j in arrayTemp[i]) {
+                        combineData(arrayTemp[i][j], arrayTemp[order + keyLine][j])
+                    }
+                } else {
+                    objectJSON.push(arrayTemp[i]);
+                    order = order + 1;
+                }
             }
             return 0;
             getTable();
@@ -195,7 +216,12 @@
                 }
                 table = table + '</tr>';
             }
-            table = table + '</thead><tbody>';
+            table = table + '<tr><th>type</th>';
+            for (let i in arrayKey[0]) {
+                if (i == 0) continue;
+                table = table + '<th>' + arrayKey[0][i].split('/').pop() + '</th>';
+            }
+            table = table + '</tr></thead><tbody>';
             for (let i = 0; i < arrayData.length; i++) {
                 table = table + '<tr>';
                 for (let j = 0; j < arrayData[i].length; j++) {
@@ -240,7 +266,7 @@
                 idata = data[0];
                 signArray = '.|';
             }
-            if (typeof (idata) == 'object') {
+            if (typeof(idata) == 'object') {
                 rowKey = rowKey + 1;
                 if (rowKey + 1 > arrayKey.length) {
                     arrayKey.push([]);
@@ -252,7 +278,7 @@
                 rowKey = rowKey - 1;
             } else {
                 columnKey = columnKey + 1;
-                arrayKey[0].push(key + '/' + typeof (idata));
+                arrayKey[0].push(key + '/' + typeof(idata));
             }
         }
 
@@ -283,12 +309,29 @@
             }
         }
 
+        function setData(keys, data, tempObject) {
+            let key = keys.shift();
+            if (keys.length == 0) {
+                tempObject[key] = data;
+            } else {
+                if (!tempObject[key]) tempObject[key] = {};
+                setData(keys, data, tempObject[key]);
+            }
+        }
+
+        function combineData(dataIn, data) {
+            let tempKeys = dataIn.keys();
+            if (tempKeys.length == 1) {
+                combineData(dataIn[tempKeys[0]], data[tempKeys[0]]);
+            }
+            if (tempKeys.length > 1) {
+                data = [data.concat()].push(dataIn);
+            }
+        }
+
         function showEdit(object) {
             let tmptext = object.innerHTML;
-            object.innerHTML = '<textarea rows="3" cols="45" onblur="changeJson(\'' + object[index] + '\', this.value, \'' +
-                object
-                    .className +
-                '\')">' + tmptext + '</textarea>';
+            object.innerHTML = '<textarea rows="3" cols="45" onblur="changeJson(\'' + object[index] + '\', this.value, \'' + object.className + '\')">' + tmptext + '</textarea>';
             object.style.height = '63px';
             object.firstElementChild.focus();
             object.parentNode.onclick = 'showEdit(this.firstElementChild);';
@@ -339,7 +382,7 @@
             }
         }
 
-        function fillTSV() { }
+        function fillTSV() {}
 
         function addLine() {
             let tempJSON = JSON.stringify(objectJSON[0]);
@@ -378,6 +421,11 @@
             exportJSON();
             getTable();
         }
+
+        function copy() {
+            let div = document.getElementById('table').innerHTML;
+            navigator.clipboard.writeText(div);
+        }
     </script>
 </head>
 
@@ -388,12 +436,13 @@
             <button type="button" onclick="importTSV()">导入TSV</button>
             <button type="button" onclick="getTable()">生成</button>
             <button type="button" onclick="exportJSON()">导出</button>
-            <button type="button" onclick="addLine()">增行</button></br>
+            <button type="button" onclick="addLine()">增行</button>
+            <button type="button" onclick="copy()">复制表格</button></br>
             提交问题：<a href="https://github.com/rainsillwood/JSON2Table-Editor/issues">Issue</a></br>
-            </br><textarea style="height: 90%;position: absolute;" cols="30" id="inputArea">
+            </br><textarea style="height: 85%;position: absolute;" cols="30" id="inputArea">
 导入JSON：导入一个json并生成表格，注意第一个json的第一个属性被视为索引属性，该属性不能为object或者array。第一个json内数据格式被视为模板格式；
 
-导入TSV：导入一个tsv(制表符分隔文件)并生成表格，注意tsv的第一个第一列值为""被视为索引行，该行必须为全空。
+导入TSV：导入一个tsv(制表符分隔文件)并生成表格，注意tsv的第一个第一列值为"type"的前一行被视为索引行，type行存储数据类型。
 
 生成：重新生成表格；
 

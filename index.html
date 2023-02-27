@@ -74,11 +74,13 @@
                     keyLine = i * 1;
                 }
             }
+            for (let j = 1; j < arrayTSV[0].length; j++) {
+
+            }
+            /*
             for (let i = 0; i < keyLine; i++) {
                 for (let j = 1; j < arrayTSV[i].length; j++) {
-                    if (arrayTSV[i][j] != '') {
-                        if (i > 0) arrayTSV[i][j] = arrayTSV[i - 1][j] + '.' + arrayTSV[i][j];
-                    } else {
+                    if (arrayTSV[i][j] = '') {
                         if ((i > 0) && (arrayTSV[i - 1][j] != arrayTSV[i - 1][j - 1])) {
                             arrayTSV[i][j] = arrayTSV[i - 1][j];
                             continue;
@@ -86,7 +88,7 @@
                         arrayTSV[i][j] = arrayTSV[i][j - 1];
                     }
                 }
-            }
+            }*/
             let keyArray = [];
             let typeArray = [];
             for (let i in arrayTSV[keyLine - 1]) {
